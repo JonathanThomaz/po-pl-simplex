@@ -14,7 +14,7 @@
     <body>
         <h1>Implementação BigM</h1>
         <div id="principal">
-            <form action="InserirRestricoesController" method="post">
+            <form action="RestricoesController" method="post">
                 <label for="txtQtdVar">
                     Insira aqui a quantidade de váriaveis que o problema tem:
                 </label>    
