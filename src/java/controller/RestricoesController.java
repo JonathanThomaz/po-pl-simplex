@@ -38,14 +38,7 @@ public class RestricoesController extends HttpServlet {
              variaveis[i] = i+1; // na i-ésima posição do vetor "v" armazena o valor da variável "i"
         }
         for (int i=0; i<qtdRes; i++) {
-             restricoes[i] = i + 1; // na i-ésima posição do vetor "v" armazena o valor da variável "i"
-        }
-        
-        for(int variavel : variaveis){
-            System.out.print("var"+variavel);
-        }
-        for(int restricao : restricoes){
-            System.out.print("res"+restricao);
+             restricoes[i] = i+1; // na i-ésima posição do vetor "v" armazena o valor da variável "i"
         }
         request.setAttribute("variaveis", variaveis);
         request.setAttribute("restricoes", restricoes);
