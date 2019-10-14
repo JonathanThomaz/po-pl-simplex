@@ -4,9 +4,17 @@
         <servlet-name>RestricoesController</servlet-name>
         <servlet-class>controller.RestricoesController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CalcularController</servlet-name>
+        <servlet-class>controller.CalcularController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RestricoesController</servlet-name>
         <url-pattern>/RestricoesController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalcularController</servlet-name>
+        <url-pattern>/CalcularController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

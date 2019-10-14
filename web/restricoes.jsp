@@ -15,7 +15,9 @@
     </head>
     <body>
         <div>
-        <form action="NaoSei" method="post">
+        <form action="CalcularController" method="post">
+            <input type="hidden" col="3" value="${qtdVar}" id="txtQtdVar" name="txtQtdVar" placeholder="none"/>
+            <input type="hidden" col="3" value="${qtdRes}" id="txtQtdRes" name="txtQtdRes" placeholder="none"/>
             <label>Qual o objetivo da função:</label>
             <select id="objetivo" name="txtObjetivo">
                 <option value="maximar">Maximar</option>
@@ -25,8 +27,8 @@
             <label>Função:            </label>
              <c:forEach items="${variaveis}" var="variavel">
             
-                <input type="text" name="txtX${variavel}" />
-                <label for="txtX${variavel}">X${variavel}+</label>
+                <input type="text" name="txtObjetivoX${variavel}" />
+                <label for="txtObjetivoX${variavel}">X${variavel}+</label>
                 </c:forEach>
                 <br>
             <label>Restricoes:</label>
@@ -35,8 +37,8 @@
                 <label for="${restricao}"> Restricao ${restricao}: </label>
                 <c:forEach items="${variaveis}" var="variavel">
                 
-                <input type="text" name="txtX${variavel}" />
-                <label for="txtX${variavel}">X${variavel}+</label>
+                <input type="text" name="txtX${variavel}r${restricao}" />
+                <label for="txtX${variavel}r${restricao}">X${variavel}+</label>
                 </c:forEach>
                 <select id="igualdade${restricao}" name="txtIgualdadeRes${restricao}">
                     <option value="<=" > <= </option> 
